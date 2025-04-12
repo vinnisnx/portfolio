@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <main>
+    <section class="contact-form">
+      <form id="contact-form">
+        <label>
+          <input type="text" id="name" name="name" placeholder=" " required>
+          <span>Name</span>
+        </label>
+
+        <label>
+          <input type="email" id="email" name="email" placeholder=" " required>
+          <span>Email</span>
+        </label>
+
+        <label>
+          <input type="text" id="subject" name="subject" placeholder=" " required>
+          <span>Subject</span>
+        </label>
+      
+        <label>
+          <input type="text" id="phone" name="phone" placeholder=" " >
+          <span>Phone (Optional)</span>
+        </label>
+      
+        <label>
+          <textarea id="message" name="message" placeholder=" " required></textarea>
+          <span>Message</span>
+        </label>
+      
+        <input type="submit" id="submit-btn" value="Send">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Ivan Suhak © 2025</p>
+  </footer>
+  <script src="js/script.js"></script>
+  <script type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function(){
+        emailjs.init({
+          publicKey: "dCGTrMIZXqDmbcM6T",
+        });
+    })();
+  </script>
+</body>
+</html>
