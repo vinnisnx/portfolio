@@ -29,9 +29,6 @@ function sendEmail() {
     window.location.href = "thank-you.html";
   }).catch(function(error) {
     window.location.href = "smth-went-wrong.html";
-  }).finally(function() {
-    submitButton.disabled = false;
-    submitButton.value = "Send";
   });
 
 }
