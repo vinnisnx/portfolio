@@ -38,7 +38,6 @@ main .intro {
     margin-bottom: auto;
 }
 
-
 nav {
     position: sticky;
     top: 0;
@@ -205,6 +204,11 @@ footer {
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
+.card-back a {
+    position: absolute;
+    bottom: 20%;
+    
+}
 .contact-form form {
     display: flex;
     flex-direction: column;
